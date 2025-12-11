@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+body{
+    min-height: 100vh;
+}
+
+
+header{
+    position: absolute;
+    width: 100%;
+    min-height: 66px;
+    background: #252584;
+    padding: 0 100px;
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    color: rgb(255, 255, 255);
+    font-size: 1.75em;
+    font-weight: 600;
+    text-align: left;
+    text-decoration: none;
+}
+
+header .logo img{
+    height: 70px;
+    width: auto;
+}
+
+
+header ul{
+    position: relative;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+    float: left;
+}
+
+header ul li a{
+    color:aliceblue;
+    font-size: 1.1em;
+    padding: 20px 25px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul li a:hover{
+    background: rgb(64, 64, 199);
+
+}
+
+header ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: rgb(63, 70, 109);
+    display: none;
+} 
+
+header ul li:hover ul{
+    display: block;
+}
+
+@media (max-width: 900px){
+
+    header{
+        padding: 10px 20px;
+    }
+
+    header nav{
+        position: absolute;
+        width: 100%;
+        top: 66px;
+        left: 0;
+        background: rgb(63, 70, 109);
+        display: none;
+    }
+
+     header.active nav{
+        display: initial;
+
+     }
+
+    header nav ul li{
+        width: 100%;
+    }
+
+    header nav ul li ul{
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    header nav ul li:hover ul li{
+        border: 1px solid rgba(0,0,0,0.2)
+    }
+
+    header nav ul li:hover ul li{
+        background: rgb(104, 110, 146);
+    }
+
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 50px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menuToggle::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        transform: translateY(-12px);
+        box-shadow: 0 12px #fff;
+    }
+
+     .menuToggle::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        transform: translateY(12px);
+    }
+
+    header.active .menuToggle::before{
+        transform: rotate(45deg);
+        box-shadow: 0 0 #fff;
+
+    }
+
+     header.active .menuToggle::after{
+        transform: rotate(315deg);
+     }
+
+}
+
+.portada{
+    color: #fff;
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 100px;
+    padding: 60px;
+    background-image: url(../img/grupo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.container-content{
+    width: 80%;
+    padding: 400px 0px 0px 20px;
+    margin: auto;
+}
+

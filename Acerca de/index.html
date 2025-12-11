@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Micro Centrales Hidroeléctricas Quienes somos</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <div class="portada">
+        <div class="izquierda">
+            <h1>Quienes Somos</h1>
+        </div>
+    </div>
+
+    <header>
+        <div class="logo">
+            <img src="../img/paec.png" alt="logo">
+        </div>
+        <a href="#" class="logo">PAEC</a>
+        <div class="menuToggle"></div>
+        <nav>
+            <ul>
+                <li><a href="../Inicio\index.html">Inicio</a></li>
+                <li><a href="#">Quienes somos</a></li>
+                <li>
+                  <a href="../Energías renovables\index.html">Más información <i class="fas fa-caret-down"></i> </a>
+                </li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        menuToggle.onclick = function(){
+            header.classList.toggle('active');
+        }
+    </script>
+
+    <div class="container-content">
+        <article>
+            <h1>Somos CBTIS 11</h1>
+            <p>somos un grupo de estudiantes del cbtis numero 11, del plantel Juana Belem. Somos participantes del programa semestral de "Proyecto Aula Escuela COmunidad" en donde nuestro objetivo es hacer cumplir objetivos sustentables en nuestro entorno, desde casa y desde la comunidad que nos rodea, logrando conientizar a mas personas apoyando a vivie en un mundo mas ecologico y libre de contaminantes productos de la mano del humano.</p>
+        </article>
+    </div>
+
+    
+
+</body>
+</html>
